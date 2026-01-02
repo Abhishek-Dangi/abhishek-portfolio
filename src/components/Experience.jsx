@@ -1,47 +1,104 @@
+import { FiBriefcase, FiMonitor, FiBookOpen } from 'react-icons/fi';
+
 export default function Experience() {
-    return (
-      <section id="experience" className="py-5">
-        <div className="container">
-          <h2 className="text-center mb-5">Experience</h2>
-  
-          {/* Current Job */}
-          <div className="card mb-4">
-            <div className="card-body">
-              <h5 className="card-title">Software Developer (Remote) – <span className="text-primary">ARSTEG Solution (P) Ltd.</span></h5>
-              <p className="card-subtitle mb-2 text-muted">Sep 2023 – Present</p>
-              <ul>
-                <li>Developed <strong>Health Track</strong> & <strong>TrackMyDay</strong> using ASP.NET Core.</li>
-                <li>Built responsive UI with Bootstrap & Vue.js.</li>
-                <li>Implemented backend logic with C# and Entity Framework.</li>
-              </ul>
+  return (
+    <section id="experience" className="py-5 bg-white">
+      <div className="container py-4">
+        <h2 className="section-title text-center w-100 mb-5">Experience</h2>
+
+        <div className="row justify-content-center">
+          <div className="col-lg-8 position-relative">
+            {/* Timeline Line */}
+            <div
+              className="position-absolute h-100 border-start border-2 border-light d-none d-md-block"
+              style={{ left: '20px', top: '0', zIndex: 0 }}
+            ></div>
+
+            {/* Experience 1 */}
+            <div className="d-flex mb-5 position-relative" style={{ zIndex: 1 }}>
+              <div
+                className="bg-primary rounded-circle border border-4 border-white shadow-sm flex-shrink-0 text-white d-none d-md-flex align-items-center justify-content-center"
+                style={{ width: '40px', height: '40px' }}
+              >
+                <FiBriefcase size={20} />
+              </div>
+              <div className="ms-4 w-100">
+                <div className="card-hover p-4">
+                  <div className="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <h5 className="mb-0 fw-bold">Software Developer (Remote)</h5>
+                    <span className="badge bg-primary bg-opacity-10 text-primary">Sep 2023 – Present</span>
+                  </div>
+                  <h6 className="text-secondary mb-3">ARSTEG Solution (P) Ltd.</h6>
+                  <ul className="text-secondary mb-0 ps-3">
+                    <li className="mb-2">Developed <strong>Health Track</strong> & <strong>TrackMyDay</strong> utilizing ASP.NET Core & Entity Framework.</li>
+                    <li className="mb-2">Architected responsive and intuitive UIs using Vue.js and Bootstrap.</li>
+                    <li>Optimized backend performance and database queries.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-  
-          {/* Previous Job */}
-          <div className="card mb-4">
-            <div className="card-body">
-              <h5 className="card-title">Web Developer – <span className="text-primary">myAma Technology</span></h5>
-              <p className="card-subtitle mb-2 text-muted">Dec 2022 – Sep 2023</p>
+
+            {/* Experience 2 */}
+            <div className="d-flex mb-5 position-relative" style={{ zIndex: 1 }}>
+              <div
+                className="bg-white border rounded-circle border-4 border-light shadow-sm flex-shrink-0 text-primary d-none d-md-flex align-items-center justify-content-center"
+                style={{ width: '40px', height: '40px' }}
+              >
+                <FiMonitor size={20} />
+              </div>
+              <div className="ms-4 w-100">
+                <div className="card-hover p-4">
+                  <div className="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <h5 className="mb-0 fw-bold">Web Developer</h5>
+                    <span className="badge bg-light text-secondary">Dec 2022 – Sep 2023</span>
+                  </div>
+                  <h6 className="text-secondary mb-0">myAma Technology</h6>
+                </div>
+              </div>
             </div>
-          </div>
-  
-          {/* Internship */}
-          <div className="card mb-4">
-            <div className="card-body">
-              <h5 className="card-title">Web Developer Intern (ASP.NET Core) – <span className="text-primary">myAma Technology</span></h5>
-              <p className="card-subtitle mb-2 text-muted">Jul 2022 – Nov 2022 (5 months)</p>
+
+            {/* Experience 3 */}
+            <div className="d-flex mb-5 position-relative" style={{ zIndex: 1 }}>
+              <div
+                className="bg-white border rounded-circle border-4 border-light shadow-sm flex-shrink-0 text-primary d-none d-md-flex align-items-center justify-content-center"
+                style={{ width: '40px', height: '40px' }}
+              >
+                <FiBookOpen size={20} />
+              </div>
+              <div className="ms-4 w-100">
+                <div className="card-hover p-4">
+                  <div className="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <h5 className="mb-0 fw-bold">Web Developer Intern</h5>
+                    <span className="badge bg-light text-secondary">Jul 2022 – Nov 2022</span>
+                  </div>
+                  <h6 className="text-secondary mb-0">myAma Technology</h6>
+                </div>
+              </div>
             </div>
-          </div>
-  
-          {/* MERN Training */}
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">MERN Stack Training – <span className="text-primary">Universal Informatics, Indore</span></h5>
-              <p className="card-subtitle mb-2 text-muted">May 2022 – Nov 2022 (6 months)</p>
-              <p>Built <strong>RoomRent</strong>, <strong>Dreamhomes</strong> etc. with React, Node.js, Express, MongoDB.</p>
+
+            {/* Experience 4 */}
+            <div className="d-flex position-relative" style={{ zIndex: 1 }}>
+              <div
+                className="bg-white border rounded-circle border-4 border-light shadow-sm flex-shrink-0 text-primary d-none d-md-flex align-items-center justify-content-center"
+                style={{ width: '40px', height: '40px' }}
+              >
+                <FiBookOpen size={20} />
+              </div>
+              <div className="ms-4 w-100">
+                <div className="card-hover p-4">
+                  <div className="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <h5 className="mb-0 fw-bold">MERN Stack Training</h5>
+                    <span className="badge bg-light text-secondary">May 2022 – Nov 2022</span>
+                  </div>
+                  <h6 className="text-secondary mb-2">Universal Informatics, Indore</h6>
+                  <p className="small text-muted mb-0">Built projects using MERN stack.</p>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}
